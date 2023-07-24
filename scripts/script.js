@@ -18,13 +18,13 @@ number_cons.forEach(number => {
   number.addEventListener('click', (e) => {
 
     if (e.target.innerText == '.' && !dot_btn) {
+      if (String(dis2_num).includes('.')) return;
       dot_btn = true;
     } else if (e.target.innerText == '.' && dot_btn) {
       return;
     }
 
-
-    dis2_num += e.target.innerText == '.' ? '0.' : e.target.innerText.split('.')[0] == '' ? '0' + e.target.innerText : e.target.innerText;
+    dis2_num += e.target.innerText == '.' && !String(dis2_num).includes('.') && dis2_num.length < 1 ? '0.' : e.target.innerText.split('.')[0] == '' && String(dis2_num).includes('.') ? '0' + e.target.innerText : e.target.innerText;
     display2.innerText = dis2_num;
   })
 
