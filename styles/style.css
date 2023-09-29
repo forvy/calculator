@@ -20,7 +20,6 @@ body.dark-mode {
     background: radial-gradient(ellipse at top, #009aff, #000), radial-gradient(ellipse at bottom, #000026, #000);
 }
 
-
 #calculator {
     position: absolute;
     top: 50%;
@@ -39,7 +38,6 @@ body.dark-mode {
     background-color: #1e1e1e;
     color: #ffffff;
 }
-
 
 #screen {
     width: 100%;
@@ -63,13 +61,10 @@ body.dark-mode {
     font-size: 32px;
 }
 
-
 .button_wrapper {
     display: flex;
     flex-wrap: wrap;
 }
-
-
 
 .buttons {
     height: 80px;
@@ -91,7 +86,6 @@ body.dark-mode {
     color: #191919;
 }
 
-
 .buttons:hover {
     background: #323232;
 }
@@ -100,11 +94,15 @@ body.dark-mode {
     background: #fff;
 }
 
+.change-theme {
+    margin-top: 1rem;
+    border-radius: 1em;
+    padding: 0.25rem;
+}
 
 div.zero {
     width: 50%;
 }
-
 
 @media only screen and (max-width: 600px) {
     .buttons:hover {
